@@ -1,0 +1,62 @@
+{
+	"rules": [
+		{
+			"name": "Example Rule",
+			"weight": 1,
+			"tags": ["abc", "def"],
+			"notifyEmails": ["abc@gmail.com"],
+			"riskMode": "SHADOW",
+			"status": "DRAFT",
+			"note": "Testing rule creation.",
+			"criteria": {
+				"type": "Logical",
+				"operator": "OR",
+				"conditions": []
+			},
+			"bucketId": "1",
+			"createdBy": "Tejas",
+			"createdTimestamp": "2024-05-06T13:48:29.531Z",
+			"updatedTimestamp": "2024-05-06T13:48:29.531Z",
+			"id": "1"
+		},
+		{
+			"name": "Rule 2",
+			"weight": 1,
+			"tags": ["abd", "def"],
+			"riskMode": "SHADOW",
+			"status": "DRAFT",
+			"note": "Testing rule creation again.",
+			"criteria": {
+				"type": "Logical",
+				"operator": "OR",
+				"conditions": []
+			},
+			"bucketId": "1",
+			"createdTimestamp": "2024-05-06T13:49:34.857Z",
+			"updatedTimestamp": "2024-05-06T13:49:34.857Z",
+			"id": "2"
+		}
+	],
+	"buckets": [
+		{
+			"name": "ABCDEF",
+			"clientPlatform": "PAYMENT_PLUS",
+			"description": "Example bucket description",
+			"transactionType": "PREAUTH",
+			"tags": ["abc", "def"],
+			"score": 400,
+			"status": "DRAFT",
+			"note": "Updated bucket again, testing criteria",
+			"criteria": {
+				"type": "Logical",
+				"operator": "OR",
+				"conditions": []
+			},
+			"id": "1",
+			"createdBy": "Tejas",
+			"createdTimestamp": "2024-05-06T10:29:05.353Z",
+			"updatedBy": "Tejas",
+			"updatedTimestamp": "2024-05-06T10:34:24.615Z"
+		}
+	]
+}
